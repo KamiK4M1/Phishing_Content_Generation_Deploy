@@ -8,7 +8,7 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/com
 import { Input } from "@/components/ui/input"
 import { Label } from "@/components/ui/label"
 import { Textarea } from "@/components/ui/textarea"
-import { Terminal, Zap, Code, Shield, Copy, Trash2 } from "lucide-react"
+import { Terminal, Zap, Code, Shield, Copy, Trash2, Github, Instagram } from "lucide-react"
 
 interface FormData {
   full_name: string
@@ -34,9 +34,9 @@ export default function HackerEmailGenerator() {
   useEffect(() => {
     const messages = [
       "Initializing AI neural network...",
-      "Connecting to Hugging Face API...",
-      "Loading language models...",
-      "System ready for email generation...",
+      "CConnecting to Hugging Face API...",
+      "LLoading language models...",
+      "SSystem ready for email generation...",
     ]
 
     let messageIndex = 0
@@ -124,12 +124,12 @@ export default function HackerEmailGenerator() {
         <div className="text-center mb-8 border border-green-500/30 bg-black/80 p-6 rounded-lg">
           <div className="flex items-center justify-center gap-3 mb-4">
             <Terminal className="h-10 w-10 text-green-400 animate-pulse" />
-            <h1 className="text-4xl font-bold text-green-400 tracking-wider">{">"} AI_EMAIL_GENERATOR.exe</h1>
+            <h1 className="text-4xl font-bold text-green-400 tracking-wider">{">"} Phishing Email Content with Personalized Context Data Generation</h1>
             <Shield className="h-10 w-10 text-green-400 animate-pulse" />
           </div>
-          <p className="text-green-300 text-lg">{"[CLASSIFIED]"} Neural Network Email Synthesis</p>
+          <p className="text-green-300 text-lg">{"[CLASSIFIED]"} LLM Phishing Email Synthesis</p>
           <p className="text-green-600 text-sm mt-2">
-            {">"} Educational & Research Operations Only {"<"}
+            {">"} For AI Builder 2025 Program {"<"}
           </p>
 
           {/* Terminal startup messages */}
@@ -252,7 +252,7 @@ export default function HackerEmailGenerator() {
                 <Terminal className="h-5 w-5" />
                 {">"} OUTPUT_STREAM.log
               </CardTitle>
-              <CardDescription className="text-green-600">{">"} AI neural network response</CardDescription>
+              <CardDescription className="text-green-600">{">"} LLM response</CardDescription>
             </CardHeader>
             <CardContent className="p-6">
               <div className="min-h-[400px] bg-black border border-green-500/30 rounded p-4">
@@ -260,7 +260,7 @@ export default function HackerEmailGenerator() {
                   <div className="flex flex-col items-center justify-center h-full">
                     <div className="text-center">
                       <Zap className="h-8 w-8 animate-pulse mx-auto mb-4 text-green-400" />
-                      <p className="text-green-400 font-mono">{">"} NEURAL_NETWORK_PROCESSING...</p>
+                      <p className="text-green-400 font-mono">{">"} LLM_PROCESSING...</p>
                       <p className="text-green-600 text-sm mt-2">{">"} Analyzing input parameters...</p>
                       <div className="mt-4 flex justify-center">
                         <div className="flex space-x-1">
@@ -310,7 +310,7 @@ export default function HackerEmailGenerator() {
                     <div className="text-center">
                       <Terminal className="h-16 w-16 mx-auto mb-4 opacity-50" />
                       <p className="font-mono">{">"} AWAITING_INPUT_PARAMETERS...</p>
-                      <p className="text-sm mt-2">{">"} Execute AI synthesis to generate output</p>
+                      <p className="text-sm mt-2">{">"} Execute LLM synthesis to generate output</p>
                     </div>
                   </div>
                 )}
@@ -321,14 +321,29 @@ export default function HackerEmailGenerator() {
 
         {/* Footer */}
         <div className="mt-8 text-center border border-green-500/30 bg-black/80 p-4 rounded">
-          <p className="text-green-600 font-mono text-sm">
-            {">"} POWERED_BY: HuggingFace_Neural_Networks | HTTP_PROTOCOL_v2.0
-          </p>
-          <p className="text-green-700 font-mono text-xs mt-1">
-            {">"} [CLASSIFIED] Educational & Research Operations {"<"}
-          </p>
+          <p className="text-green-600 font-mono text-sm">{">"} DEVELOP BY: Shitiphat Soysangwarn (Website)</p>
+          <div className="flex items-center justify-center gap-6 mt-2">
+            <a
+              href="https://github.com/KamiK4M1"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center gap-2 text-green-500 hover:text-green-300 transition-colors"
+            >
+              <Github className="h-5 w-5" />
+              <span className="text-xs">@KamiK4M1</span>
+            </a>
+            <a
+              href="https://www.instagram.com/k4m1.kxm1"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center gap-2 text-green-500 hover:text-green-300 transition-colors"
+            >
+              <Instagram className="h-5 w-5" />
+              <span className="text-xs">@k4m1.kxm1</span>
+            </a>
+          </div>
         </div>
-      </div>
+       </div>
     </div>
   )
 }
