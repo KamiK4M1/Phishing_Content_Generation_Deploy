@@ -33,7 +33,7 @@ export default function HackerEmailGenerator() {
   // Hacker terminal effect
   useEffect(() => {
     const messages = [
-      "Initializing AI neural network...",
+      "Initializing LLM...",
       "CConnecting to Hugging Face API...",
       "LLoading language models...",
       "SSystem ready for email generation...",
